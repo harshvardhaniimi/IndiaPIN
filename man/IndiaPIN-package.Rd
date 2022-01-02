@@ -2,8 +2,9 @@
 % Please edit documentation in R/IndiaPIN-package.R
 \docType{package}
 \name{IndiaPIN-package}
-\alias{IndiaPIN}
 \alias{IndiaPIN-package}
+\alias{_PACKAGE}
+\alias{testduplicate-package}
 \title{IndiaPIN: Indian PIN Codes Directory}
 \description{
 This dataset contains the directory of all PIN codes in India with latitude and longitude details. (Updated: December 2021).
