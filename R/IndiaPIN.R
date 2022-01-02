@@ -14,5 +14,5 @@
 #'   \item{Latitude}{dbl Latitude}
 #'   \item{Longitude}{dbl Longitude}
 #' }
-#' @source \url{https://www.indiapost.gov.in/vas/pages/findpincode.aspx}
+#' @source Department of Posts, Ministry of Communications, Government of India. \url{https://www.indiapost.gov.in/vas/pages/findpincode.aspx}
 "IndiaPIN"
