@@ -3,7 +3,7 @@
 \docType{data}
 \name{IndiaPIN}
 \alias{IndiaPIN}
-\title{All India PIN Codes Directory with Latitude and Longitude Details (Updated: December 2021)}
+\title{Indian PIN Code Directory with Latitude and Longitude Details}
 \format{
 A tibble with 19,300 rows and 9 variables:
 \describe{
@@ -26,6 +26,8 @@ Wrangled for this package by Harshvardhan (\url{https://harsh17.in/}).
 IndiaPIN
 }
 \description{
-This dataset contains geographic details about all PIN codes in India.
+This dataset contains geographic details about all PIN codes in India. Some PIN codes
+had more than one offices. Only the first office of that PIN code area has been retained
+in those cases. (Updated: December 2021)
 }
 \keyword{datasets}
