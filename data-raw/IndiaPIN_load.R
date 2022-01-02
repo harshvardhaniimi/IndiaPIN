@@ -15,6 +15,8 @@ IndiaPIN = utils::read.csv(here::here("data-raw", "pincode.csv")) %>%
          PIN = Pincode, State = StateName) %>% 
   select(-OfficeType, -Delivery) %>% 
   mutate(Latitude = as.numeric(Latitude),
-         Longitude = as.numeric(Longitude))
+         Longitude = as.numeric(Longitude)) %>% 
+  # Office has some non-ASCII characters. So converting them to ASCII to avoid CRAN warnings.
+  mutate(Office = stringi::stri_trans_general(Office, "latin-ascii"))
 
 usethis::use_data(IndiaPIN, overwrite = TRUE)
