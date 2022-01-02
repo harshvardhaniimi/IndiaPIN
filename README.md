@@ -48,13 +48,53 @@ data(IndiaPIN)
 6 Andhra Pradesh Circle Kurnool Region Hindupur Division Bussaiahg… 515241 ANANTAP… ANDHR…     14.0      77.7
 ````
 
-## Number of PIN codes by state
+## Number of PIN codes by State/UT
 ````
 IndiaPIN %>% 
   group_by(State) %>% 
   summarise(Count = n()) %>% 
   arrange(desc(Count)) %>% 
   print(n = 40)
+  
+# A tibble: 36 × 2
+   State                                        Count
+   <chr>                                        <int>
+ 1 TAMIL NADU                                    2036
+ 2 UTTAR PRADESH                                 1652
+ 3 MAHARASHTRA                                   1585
+ 4 KERALA                                        1425
+ 5 KARNATAKA                                     1347
+ 6 ANDHRA PRADESH                                1228
+ 7 WEST BENGAL                                   1128
+ 8 GUJARAT                                       1007
+ 9 RAJASTHAN                                     1004
+10 ODISHA                                         935
+11 BIHAR                                          857
+12 MADHYA PRADESH                                 770
+13 TELANGANA                                      674
+14 ASSAM                                          572
+15 PUNJAB                                         534
+16 HIMACHAL PRADESH                               436
+17 JHARKHAND                                      380
+18 HARYANA                                        315
+19 UTTARAKHAND                                    300
+20 CHHATTISGARH                                   274
+21 JAMMU AND KASHMIR                              196
+22 DELHI                                           97
+23 GOA                                             88
+24 TRIPURA                                         80
+25 MEGHALAYA                                       68
+26 MANIPUR                                         52
+27 ARUNACHAL PRADESH                               49
+28 MIZORAM                                         47
+29 NAGALAND                                        43
+30 CHANDIGARH                                      25
+31 ANDAMAN AND NICOBAR ISLANDS                     22
+32 PUDUCHERRY                                      22
+33 SIKKIM                                          19
+34 LADAKH                                          16
+35 LAKSHADWEEP                                      9
+36 THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU     8
 ````
 
 More examples will be added in time.
