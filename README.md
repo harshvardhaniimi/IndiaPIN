@@ -31,6 +31,8 @@ library(IndiaPIN)
 data(IndiaPIN)
 ````
 
+
+
 # Examples
 
 ## Variables
@@ -123,3 +125,6 @@ m = leaflet() %>%
 
 m
 ````
+
+<img width="1440" alt="Screen Shot 2022-01-24 at 8 17 31 PM" src="https://user-images.githubusercontent.com/40472851/150892828-8251d0f1-3241-4ebc-ba8c-55cb61e55645.png">
+
