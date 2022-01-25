@@ -31,7 +31,7 @@ library(IndiaPIN)
 data(IndiaPIN)
 ````
 
-# Example
+# Examples
 
 ## Variables
 ````
@@ -97,4 +97,29 @@ IndiaPIN %>%
 36 THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU     8
 ````
 
-More examples will be added in time.
+## Plotting on Map
+
+I will use `leaflet` package to plot randomly selected 50 PIN codes. I am adding the Region and Circle name in the popup.
+
+````
+library(leaflet)
+library(tidyverse)
+library(IndiaPIN)
+
+data("IndiaPIN")
+
+
+index = sample(nrow(IndiaPIN), 50)
+
+data = IndiaPIN::IndiaPIN[index,]
+
+l1 = data$Longitude
+l2 = data$Latitude
+pop = paste(data$Region, data$Circle, sep = ", ")
+
+m = leaflet() %>% 
+   addTiles() %>% 
+   addMarkers(lng=l1, lat=l2, popup = pop)
+
+m
+````
